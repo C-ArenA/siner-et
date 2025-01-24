@@ -2,19 +2,28 @@
 title: 2.2.1 Alcance
 ---
 
-import { CardGrid } from "@astrojs/starlight/components";
+import { CardGrid, Badge } from "@astrojs/starlight/components";
 import Card from "../../../../components/Card.astro";
 
 El **PROPONENTE** deberá considerar los siguientes alcances de este Sub Sistema:
 
 <CardGrid>
   <Card title="Modelado del Negocio" icon="pencil">
+    <div style="visibility:hidden; position:absolute">
+      ## Modelado del Negocio
+    </div>
     - [ ] **a)** Relevamiento de Información y procesos.
   </Card>
   <Card title="Interoperabilidad" icon="seti:julia">
+    <div style="visibility:hidden; position:absolute">
+      ## Interoperabilidad
+    </div>
     - [ ] **f)** Integración de sistemas actuales de la entidad al **SSGE**.
   </Card>
   <Card title="Proceso del Software" icon="seti:html">
+    <div style="visibility:hidden; position:absolute">
+      ## Proceso del Software
+    </div>
     - [ ] **b)** Realizar (del SSGE) el:
       - Análisis, 
       - Diseño, 
@@ -28,6 +37,9 @@ El **PROPONENTE** deberá considerar los siguientes alcances de este Sub Sistema
   </Card>
   
   <Card title="Datos" icon="seti:db">
+    <div style="visibility:hidden; position:absolute">
+      ## Datos
+    </div>
     - [ ] **d)** Modelo de Datos propuesto, indicando el motor de Base de Datos a proveer
     e implementarse.
     - [ ] **i)** Métodos de respaldo y resguardo de la Información (backups históricos e
@@ -37,32 +49,51 @@ El **PROPONENTE** deberá considerar los siguientes alcances de este Sub Sistema
     en caso de emergencia.
   </Card>
   
-  <Card title="Testing" icon="approve-check-circle"> 
-    - [ ] **h)** Protocolo de pruebas del subsistema. 
-  </Card>
   <Card title="Seguridad y Auditoría" icon="seti:lock"> 
+    <div style="visibility:hidden; position:absolute">
+      ## Seguridad y Auditoría
+    </div>
     - [ ] **l1)** Seguridad informática
     - [ ] **l2)** Auditoría de procesos. 
   </Card>
   <Card title="Capacitación" icon="open-book">
-    - [ ] **k)** Capacitación técnica (Administración, Operación y Mantenimiento) y Capacitación del usuario.
+    <div style="visibility:hidden; position:absolute">
+      ## Capacitación
+    </div>
+    - [ ] **k1)** Capacitación técnica (Administración, Operación y Mantenimiento)
+    - [ ] **k2)** Capacitación del usuario.
   </Card>
   <Card title="Calidad y Funcionamiento" icon="puzzle"> 
-    - [ ] **g)** Cumplir con los estándares de calidad vigentes.
-    - [ ] **q)** Las licencias de Uso de Software deben garantizar la operabilidad del SSGE y pasada la garantía del proyecto deben continuar con la funcionalidad por la cual fueron adquiridas.
+    <div style="visibility:hidden; position:absolute">
+      ## Calidad y Funcionamiento
+    </div>
+    - [ ] **h)** Protocolo de **pruebas** del subsistema. 
+    - [ ] **g)** Cumplir con los estándares de **calidad** vigentes.
+    - [ ] **q)** Las **licencias** de Uso de Software deben garantizar la operabilidad del SSGE y pasada la garantía del proyecto deben continuar con la funcionalidad por la cual fueron adquiridas.
+  </Card>
+  <Card title="Gestión Técnica" icon="seti:bicep"> 
+    <div style="visibility:hidden; position:absolute">
+      ## Gestión Técnica
+    </div>
+    - [ ] **n)** Gestión técnica de **verificación**. 
+    - [ ] **o)** Gestión técnica de **registro**.
+    - [ ] **p)** Interfaz con los procesos de soporte para la **gestión del espectro radioeléctrico** como ser: 
+      - cálculos de 
+        - cobertura, 
+        - campo electromagnético, 
+        - propagación y 
+        - análisis de compatibilidad electromagnética; 
+      - comprobación técnica de emisiones; 
+      - planificación de frecuencias; 
+      - notificaciones UIT.
   </Card>
   <Card title="Actualizaciones" icon="seti:git">
+    <div style="visibility:hidden; position:absolute">
+      ## Actualizaciones
+    </div>
     - [ ] **m)** Planificación y soporte para las actualizaciones de:
       - Software de base,
       - Software de base de datos y 
       - Software de aplicación.
-  </Card>
-  <Card title="Gestión Técnica" icon="seti:bicep"> 
-    - [ ] **n)** Gestión técnica de verificación. 
-    - [ ] **o)** Gestión técnica de registro.
-    - [ ] **p)** Interfaz con los procesos de soporte para la gestión del espectro radioeléctrico
-    como ser: cálculos de cobertura, campo electromagnético, propagación y análisis
-    de compatibilidad electromagnética; comprobación técnica de emisiones; planificación
-    de frecuencias; notificaciones UIT.
   </Card>
 </CardGrid>
